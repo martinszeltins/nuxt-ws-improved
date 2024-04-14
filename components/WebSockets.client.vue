@@ -23,7 +23,7 @@
 </template>
 
 <script lang="ts" setup>
-    const { data, send } = useWebSocket(`ws://127.0.0.1:3000/api/websocket`)
+    const { data, send } = useWebSocket(`ws://${location.host}/ws`)
 
     const message = ref('')
     const history = ref<string[]>([])
